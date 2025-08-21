@@ -324,6 +324,7 @@ button{
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: #434455;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
@@ -589,14 +590,13 @@ button{
   background-color: #404bbf;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px){ 
+  
   .team-list{
     row-gap:64px;
     column-gap:24px;
+    flex-direction: row;
   }
-  .team-item{
-  width: calc((100% - 24px)/2);
-}
 }
 
 @media screen and (min-width:1158px){
