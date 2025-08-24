@@ -323,6 +323,7 @@ button{
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  font-style: normal;
   letter-spacing: 0.02em;
   color: #434455;
   transition-property: color;
@@ -354,6 +355,10 @@ button{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.color-blue{
+  color: #404bbf;
+}
+
 .mobile-menu-icon-link:hover,
 .mobile-menu-icon-link:focus{
   background-color: #404bbf;
@@ -363,13 +368,19 @@ button{
 .solution{
   padding-top: 72px;
   padding-bottom: 72px;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Solution/solution-img-mob-min.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 768px;
+  max-width: 320px;
   margin: 0 auto;
 }
+
+@media (min-resolution: 192dpi) { 
+      .solution {
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Solution/solution-img-mob@2x-min.jpg");
+      }
+    }
 
 .solution-title{
   font-weight: 700;
@@ -413,8 +424,14 @@ button{
   .solution{
     padding-top: 112px;
     padding-bottom: 112px;
-    max-width: 1158px;
+    max-width: 768px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Solution/solution-img-tab-min.jpg");
   }
+  @media (min-resolution: 192dpi) { 
+      .solution {
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Solution/solution-img-tab@2x-min.jpg");
+      }
+    }
   .solution-title{
     font-size: 56px;
     line-height: 1.07;
@@ -428,7 +445,13 @@ button{
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Solution/solution-img-desk-min.jpg");
   }
+  @media (min-resolution: 192dpi) { 
+      .solution {
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Solution/solution-img-desk@2x-min.jpg");
+      }
+    }
   .solution-title{
   margin-bottom: 48px;
   }
@@ -533,6 +556,7 @@ button{
   display: flex;
   flex-direction: column;
   gap: 72px;
+  align-items: center;
 }
 .team-item {
   border-radius: 0 0 4px 4px;
@@ -637,7 +661,7 @@ button{
 .portfolio-item{
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #fff;
-  max-width: 288px;
+  width: 100%;
 }
 
 .portfolio-block{
@@ -677,7 +701,7 @@ button{
     justify-content: center;
   }
   .portfolio-item{
-    max-width: 356px;
+    width: calc((100% - 24px)/2);
   }
 }
 
@@ -871,20 +895,27 @@ margin-bottom: 16px;
 }
 
 @media screen and (min-width:768px){
+  .footer-container{
+    padding: 0 108px;
+    column-gap:24px ;
+    row-gap: 72px;
+  }
   .footer-text{
   max-width: 264px;
   }
   .footer-form-input{
-  width: 264px;
+    margin-bottom: 0;
+    width: 264px;
   }
   .footer-logo-block{
+    margin: 0;
     text-align: start;
   }
   .footer-form-block-text{
     text-align: start;
   }
   .footer-icon-block{
-    margin-left: 24px;
+    margin: 0;
   }
   .footer-icon-block-text{
     text-align: start;
@@ -900,6 +931,7 @@ margin-bottom: 16px;
   padding: 100px 0;
   }
   .footer-container{
+    padding: 0 ;
   align-items: baseline;
   }
   .footer-logo-block{
