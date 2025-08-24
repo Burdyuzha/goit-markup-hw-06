@@ -931,8 +931,9 @@ margin-bottom: 16px;
   padding: 100px 0;
   }
   .footer-container{
-    padding: 0 ;
-  align-items: baseline;
+    padding: 15px ;
+    gap: 0;
+    align-items: baseline;
   }
   .footer-logo-block{
   margin-right: 120px;
